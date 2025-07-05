@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet" />
+</head>
+
+<body>
+    <main>
+        <div class="desktop">
+            <div class="lock-screen">
+                <img src="https://images.unsplash.com/photo-1508739773434-c26b3d09e071?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="">
+                <h1 class="time">6:38</h1>
+                <p class="date">Sunday, June 29</p>
+            </div>
+            <div class="password-screen">
+                <div class="password-hint">
+                    <h1>Password: <span>1234</span></h1>
+                </div>
+                <div class="admin">
+                    <div class="profile-pic"><img src="./Assets/IMG_20241103_101137439_HDR.jpg" alt="" srcset=""></div>
+                    <p>Admin</p>
+                    <input type="password" placeholder="password" autocomplete="off">
+                    <p class="pin">I forgot my pin</p>
+                </div>
+            </div>
+            <div class="desktop-bg">
+                <img src="https://images.unsplash.com/photo-1499678329028-101435549a4e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    alt="bg-image">
+            </div>
+            <div class="context-menu">
+                <ul>
+                    <li id="new-folder-btn"><i class="ri-add-circle-line"></i>new</li>
+                    <li onclick="location.reload()"><i class="ri-refresh-line"></i>refresh</li>
+                    <li><i class="ri-terminal-box-fill"></i>open terminal</li>
+                    <li><i class="ri-edit-circle-fill"></i>show more options</li>
+                </ul>
+            </div>
+            <div class="bottom-nav-bar">
+                <div class="weather">
+                    <div class="weather-img">
+                        <img src="https://img.icons8.com/?size=100&id=19541&format=png&color=000000" alt="weather-info">
+                    </div>
+                    <div class="weather-text">
+                        <p class="f">32°F</p>
+                        <p class="info">Rainy day</p>
+                    </div>
+                </div>
+                <div class="center">
+                    <div class="start-icon icons">
+                        <img src="https://img.icons8.com/?size=100&id=TuXN3JNUBGOT&format=png&color=000000">
+                    </div>
+                    <div class="search-container">
+                        <span class="search-icon">&#128269;</span>
+                        <input type="search" placeholder="Quick search">
+                    </div>
+                    <div class="icons">
+                        <img src="https://img.icons8.com/?size=100&id=PxQoyT1s0uFh&format=png&color=000000" alt="" class="MS-copilot">
+                        <img src="https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000" alt="" class="bing">
+                        <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" alt="" class="vscode-icon">
+                        <img src="https://img.icons8.com/?size=100&id=P0xhuRBy8MnO&format=png&color=000000" alt="" class="MS-store">
+                        <img src="https://th.bing.com/th/id/R.bdbe9d0ece11d783e6cf4faafe1d121b?rik=cSlBuyM7A8SQqw&riu=http%3a%2f%2fwww.rw-designer.com%2ficon-image%2f22960-256x256x68.png&ehk=Q8nipLXOsU0%2bT77857hwjbYLbIEhap6oOv%2fA4tW8jMY%3d&risl=&pid=ImgRaw&r=0"
+                            alt="" class="file-explorer">
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="right-icons">
+                        <div class="hidden-icons hover">
+                            <i class="ri-arrow-up-s-line"></i>
+                        </div>
+                        <div class="drive hover">
+                            <img src="https://img.icons8.com/?size=100&id=PnENrLMMW4eV&format=png&color=000000" alt=""
+                                srcset="">
+                        </div>
+                        <div class="lang hover">
+                            <h4>ENG</h4>
+                            <h4 class="country">IN</h4>
+                        </div>
+                    </div>
+                    <div class="wifi-sound-battery">
+                        <div class="wifi icon"><i class="ri-wifi-line"></i></div>
+                        <div class="sound icon"><i class="ri-volume-up-line"></i></div>
+                        <div class="battery icon"><i class="ri-battery-fill"></i></div>
+                    </div>
+                    <div class="date-time">
+                        <p class="time">4:40 PM</p>
+                        <p class="right-date">6/25/2025</p>
+                    </div>
+                </div>
+            </div>
+            <div class="start-menu">
+                <div class="start-search">
+                    <span class="search-icon">&#128269;</span>
+                    <input type="search" placeholder="search">
+                </div>
+                <div class="start-apps">
+                    <div class="start-app bing">
+                        <img src="https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000" alt="">
+                        <p>Microsoft Edge</p>
+                    </div>
+                    <div class="start-app vscode-icon">
+                    <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" alt="">
+                    <p>Visual Studio Code</p>
+                    </div>
+                    <div class="start-app MS-store">
+                        <img src="https://img.icons8.com/?size=100&id=P0xhuRBy8MnO&format=png&color=000000" alt="">
+                        <p>Microsoft Store</p>
+                    </div>
+                    <div class="start-app MS-copilot">
+                        <img src="https://img.icons8.com/?size=100&id=PxQoyT1s0uFh&format=png&color=000000" alt="">
+                        <p>Microsoft Copilot</p>
+                    </div>
+                    <div class="start-app">
+                        <img src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000" alt="">
+                        <p>New Folder</p>
+                    </div>
+                </div>
+                <div class="start-profile">
+                    <div class="start-profile-info">
+                        <div class="profile-pic">
+                            <img src="./Assets/IMG_20241103_101137439_HDR.jpg" alt="">
+                        </div>
+                        <p>Admin</p>
+                    </div>
+                    <div class="power">
+                        <i class="ri-shut-down-line"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="desktop-icons">
+                <div class="desktop-icon desktop-icon-1 bing">
+                    <img src="https://img.icons8.com/?size=100&id=dGm9KIZPpukc&format=png&color=000000" alt="">
+                    <p>Microsoft Edge</p>
+                </div>
+                <div class="desktop-icon desktop-icon-2 vscode-icon">
+                    <img src="https://img.icons8.com/?size=100&id=9OGIyU8hrxW5&format=png&color=000000" alt="">
+                    <p>Visual Studio Code</p>
+                </div>
+                <div class="desktop-icon desktop-icon-3 MS-store">
+                    <img src="https://img.icons8.com/?size=100&id=P0xhuRBy8MnO&format=png&color=000000" alt="">
+                    <p>Microsoft Store</p>
+                </div>
+                <div class="desktop-icon desktop-icon-3">
+                    <img src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000" alt="">
+                    <p>New Folder</p>
+                </div>
+            </div>
+            <div class="weatherTab">
+                <div class="weather-top">
+                    <div class="weather-tab-date">
+                        <p>June 29</p>
+                        <h1>Good Afternoon</h1>
+                    </div>
+                    <div class="pp">
+                        <img src="./Assets/IMG_20241103_101137439_HDR.jpg" alt="">
+                        <p>Admin</p>
+                    </div>
+                </div>
+                <div class="weather-details">
+                    <p>Vadodara</p>
+                    <h1>32°F</h1>
+                    <button>see fullforecast</button>
+                </div>
+            </div>
+            <div class="file-system">
+                <div class="nav">
+                    <div class="this-pc">
+                        <img src="https://img.icons8.com/?size=100&id=vfLlLKzofS1u&format=png&color=000000" alt="">
+                        <p>This PC</p>
+                    </div>
+                    <div class="buttons">
+                        <button class="mini">-</button>
+                        <button class="fullsc"><i class="ri-square-line"></i></button>
+                        <button class="close"><i class="ri-close-line"></i></button>
+                    </div>
+                </div>
+                <div class="toolbar">
+                    <div class="tools">
+                        <div class="new" id="fs-new-folder-btn">
+                            <i class="ri-add-circle-line"></i> New Folder
+                        </div>
+                        <div><i class="ri-scissors-2-fill"></i></div>
+                        <div><i class="ri-file-copy-line"></i></div>
+                        <div><i class="ri-clipboard-line"></i></div>
+                        <div><i class="ri-exchange-box-line"></i></div>
+                        <div><i class="ri-share-forward-box-line"></i></div>
+                        <div><i class="ri-delete-bin-line"></i></div>
+                    </div>
+                    <div class="file-search">
+                        <div class="search-container">
+                            <span class="search-icon">&#128269;</span>
+                            <input type="search" placeholder="Search">
+                        </div>
+                    </div>
+                </div>
+                <div class="content">
+                    <div class="side-bar">
+                        <div class="top">
+                            <div><img src="https://img.icons8.com/?size=100&id=9J1KcyzZVytT&format=png&color=000000"
+                                    alt="" srcset=""> Home</div>
+                            <div><img src="https://img.icons8.com/?size=100&id=yRoFUHiH0uft&format=png&color=000000"
+                                    alt="" srcset=""> Gallery</div>
+                        </div>
+                        <div class="side-bar-center">
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=lDxPxP30VJWI&format=png&color=000000"
+                                    alt="" srcset=""> Desktop</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=JQchpoUKMG5z&format=png&color=000000"
+                                    alt="" srcset=""> Downloads</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=K5ZTlMA55wO5&format=png&color=000000"
+                                    alt="" srcset=""> Pictures</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=v48YeNbSIl9z&format=png&color=000000"
+                                    alt="" srcset=""> Videos</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="" srcset=""> New Folder</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="" srcset=""> New Folder</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="" srcset=""> New Folder</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="" srcset=""> New Folder</div>
+                            <div class="bars"><img
+                                    src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="" srcset=""> New Folder</div>
+                        </div>
+                        <div class="end">
+                            <div><img src="https://img.icons8.com/?size=100&id=vfLlLKzofS1u&format=png&color=000000"
+                                    alt="" srcset=""> Desktop</div>
+                            <div><img src="https://img.icons8.com/?size=100&id=rJdFNAVAAuye&format=png&color=000000"
+                                    alt="" srcset=""> OS: Drive</div>
+                            <div><img src="https://img.icons8.com/?size=100&id=vaQUFtPEp5nj&format=png&color=000000"
+                                    alt="" srcset=""> D: Drive</div>
+                            <div><img src="https://img.icons8.com/?size=100&id=ioC7h3zM76qQ&format=png&color=000000"
+                                    alt="" srcset=""> Network</div>
+                        </div>
+                    </div>
+                    <div class="content-area">
+                        <div class="storage">
+                            <div class="file-drive">
+                                <div>
+                                    <img src="https://img.icons8.com/?size=100&id=rJdFNAVAAuye&format=png&color=000000"
+                                        alt="" srcset="">
+                                </div>
+                                <div class="storage-info">
+                                    <p>OS (C:)</p>
+                                    <div class="progress-bar">
+                                        <div class="progress"></div>
+                                    </div>
+                                    <p>133 GB free of 236 GB </p>
+                                </div>
+                            </div>
+                            <div class="file-drive">
+                                <div>
+                                    <img src="https://img.icons8.com/?size=100&id=vaQUFtPEp5nj&format=png&color=000000"
+                                        alt="" srcset="">
+                                </div>
+                                <div class="storage-info">
+                                    <p>Data (D:)</p>
+                                    <div class="progress-bar">
+                                        <div class="progress" style="width: 10%;"></div>
+                                    </div>
+                                    <p>908 GB free of 931 GB </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="folders">
+                            <div class="folder">
+                                <img src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="Folder Icon">
+                                <div class="folder-name">My Documents</div>
+                            </div>
+                            <div class="folder">
+                                <img src="https://img.icons8.com/?size=100&id=WWogVNJDSfZ5&format=png&color=000000"
+                                    alt="Folder Icon">
+                                <div class="folder-name">Projects</div>
+                            </div>
+                            <!-- Add more .folder blocks as needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="theme">
+                <div class="light">
+                    <i class="ri-sun-fill"></i>
+                    <p>Light Mode</p>
+                </div>
+                <div class="dark">
+                    <i class="ri-moon-clear-fill"></i>
+                    <p>Dark Mode</p>
+                </div>
+            </div>
+            <div class="quick-settings">
+                <div class="qs-header">
+                    <span>Quick Settings</span>
+                    <button class="qs-close">&times;</button>
+                </div>
+                <div class="qs-toggles">
+                    <div class="qs-toggle active">
+                        <i class="ri-wifi-line"></i>
+                        <span>Wi-Fi</span>
+                    </div>
+                    <div class="qs-toggle">
+                        <i class="ri-bluetooth-line"></i>
+                        <span>Bluetooth</span>
+                    </div>
+                    <div class="qs-toggle">
+                        <i class="ri-flight-takeoff-line"></i>
+                        <span>Airplane</span>
+                    </div>
+                </div>
+                <div class="qs-slider-group">
+                    <div class="qs-slider">
+                        <i class="ri-sun-line"></i>
+                        <input type="range" min="0" max="100" value="60">
+                    </div>
+                    <div class="qs-slider">
+                        <i class="ri-volume-up-line"></i>
+                        <input type="range" min="0" max="100" value="80">
+                    </div>
+                </div>
+            </div>
+            <div class="shutdown-screen">
+                <p>The System is off</p>
+                <div class="turn-On">
+                    <i class="ri-shut-down-line"></i>
+                    <p>Turn On</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"
+        integrity="sha512-NcZdtrT77bJr4STcmsGAESr06BYGE8woZdSdEgqnpyqac7sugNO+Tr4bGwGF3MsnEkGKhU2KL2xh6Ec+BqsaHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
